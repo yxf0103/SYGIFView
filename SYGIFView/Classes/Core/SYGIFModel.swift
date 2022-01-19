@@ -16,6 +16,7 @@ open class SYGifIndexItem {
 
 open class SYGIFModel: NSObject {
     private var imgLocalpath : String?
+    private var imgData : Data?
     
     private var totalTime: TimeInterval = 0
     private var gifTimeIndexs = [SYGifIndexItem]()
@@ -24,11 +25,7 @@ open class SYGIFModel: NSObject {
     private var currentIndex: SYGifIndexItem?
     
     private lazy var imgSource: CGImageSource? = {
-        guard let imgLocalpath = imgLocalpath else {
-            return nil
-        }
-        let imgData = NSData.init(contentsOfFile: imgLocalpath)
-        guard let imgData = imgData else{
+        guard let imgData = gifImageData() else{
             return nil
         }
         imgSource = CGImageSourceCreateWithData(imgData, nil)
@@ -65,15 +62,34 @@ open class SYGIFModel: NSObject {
     }()
         
     private lazy var defaultImg: UIImage? = {
-        guard let imgLocalpath = imgLocalpath else { return nil }
-        return UIImage.init(contentsOfFile: imgLocalpath)
+        guard let gifData = gifImageData() else { return nil }
+        return UIImage.init(data: gifData as Data)
     }()
     
     convenience init(localpath:String?) {
         self.init()
         self.imgLocalpath = localpath
     }
-     
+    
+    convenience init(imgData:Data?) {
+        self.init()
+        self.imgData = imgData
+    }
+}
+
+public extension SYGIFModel{
+    
+    func gifImageData() -> NSData?{
+        if imgData != nil {
+            return imgData as NSData?
+        }
+        guard let imgLocalpath = imgLocalpath else {
+            return nil
+        }
+        return NSData.init(contentsOfFile: imgLocalpath)
+    }
+    
+    
     func imgAtTime(time:TimeInterval) -> UIImage?{
         guard let imgSource = self.imgSource else {
             return self.defaultImg
@@ -109,5 +125,4 @@ open class SYGIFModel: NSObject {
         }
         return self.defaultImg
     }
-    
 }

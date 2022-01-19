@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SYGIFView'
-  s.version          = '0.1.1'
+  s.version          = '0.2.0'
   s.summary          = 'gif extension for uiimageview'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,17 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'SYGIFView/Classes/**/*'
+  s.subspec 'Core' do |ss|
+    ss.source_files = 'SYGIFView/Classes/Core/**/*'
+  end
+  s.subspec 'SDWebImage' do |ss|
+    ss.source_files = 'SYGIFView/Classes/GIFSDWebImage/**/*'
+    ss.dependency 'SYGIFView/Core'
+    ss.dependency 'SDWebImage'
+  end
+  
+  
+  #s.source_files = 'SYGIFView/Classes/**/*'
   
   # s.resource_bundles = {
   #   'SYGIFView' => ['SYGIFView/Assets/*.png']

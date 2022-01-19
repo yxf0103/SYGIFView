@@ -1,9 +1,9 @@
 {
   "name": "SYGIFView",
-  "version": "0.1.0",
-  "summary": "A short description of SYGIFView.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/yxfeng0103@hotmail.com/SYGIFView",
+  "version": "0.1.1",
+  "summary": "gif extension for uiimageview",
+  "description": "'gif extension for uiimageview'",
+  "homepage": "https://github.com/yxf0103/SYGIFView",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,28 @@
     "yxfeng0103@hotmail.com": "ssi-yanxf@dfmc.com.cn"
   },
   "source": {
-    "git": "https://github.com/yxfeng0103@hotmail.com/SYGIFView.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/yxf0103/SYGIFView",
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "SYGIFView/Classes/**/*"
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "SYGIFView/Classes/Core/**/*"
+    },
+    {
+      "name": "SDWebImage",
+      "source_files": "SYGIFView/Classes/GIFSDWebImage/**/*",
+      "dependencies": {
+        "SYGIFView/Core": [
+
+        ],
+        "SDWebImage": [
+
+        ]
+      }
+    }
+  ]
 }

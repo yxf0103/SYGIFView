@@ -1,15 +1,29 @@
 PODS:
-  - SYGIFView (0.1.0)
+  - SDWebImage (5.12.2):
+    - SDWebImage/Core (= 5.12.2)
+  - SDWebImage/Core (5.12.2)
+  - SYGIFView (0.1.1):
+    - SYGIFView/Core (= 0.1.1)
+    - SYGIFView/SDWebImage (= 0.1.1)
+  - SYGIFView/Core (0.1.1)
+  - SYGIFView/SDWebImage (0.1.1):
+    - SDWebImage
+    - SYGIFView/Core
 
 DEPENDENCIES:
   - SYGIFView (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - SDWebImage
 
 EXTERNAL SOURCES:
   SYGIFView:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SYGIFView: 0edfb049278199810f36fda53d32ba079f4a7d34
+  SDWebImage: 240e5c12b592fb1268c1d03b8c90d90e8c2ffe82
+  SYGIFView: ec791c0ebb20cede3e84cbfed67d8657fc5f7014
 
 PODFILE CHECKSUM: dcb7fa508ab7799e873e3ee68e9cbc8f35fa3e08
 

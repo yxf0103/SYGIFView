@@ -47,12 +47,7 @@ public extension UIImageView{
         return objc_getAssociatedObject(self, key) as? TimeInterval ?? 0
     }
         
-    func sy_startGifAnimation(imgpath:String?){
-        let model = SYGIFModel.init(localpath: imgpath)
-        self.sy_startGifAnimation(model: model)
-    }
-    
-    func sy_startGifAnimation(imgpath:String?,autoRepeat:Bool){
+    func sy_startGifAnimation(imgpath:String?,autoRepeat:Bool=false){
         let model = SYGIFModel.init(localpath: imgpath)
         model.autoRepeat = autoRepeat
         self.sy_startGifAnimation(model: model)
