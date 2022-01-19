@@ -30,9 +30,10 @@ imgView.backgroundColor = UIColor.white
 let path = Bundle.main.path(forResource: "demo.gif", ofType: nil)
 
 // start animate
-imgView.sy_startGifAnimation(imgpath: path)
-//auto repeat
+//localpath
 imgView.sy_startGifAnimation(imgpath: path,autoRepeat: true)
+//network url
+webimgView.sy_startGifAnimation(url:url, autoRepeat: true)
 
 //end animate
 imgView.sy_endGifAnimation()
