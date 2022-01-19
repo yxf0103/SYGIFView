@@ -20,7 +20,9 @@ class ViewController: UIViewController {
         view.addSubview(imgView)
         imgView.backgroundColor = UIColor.white
         let path = Bundle.main.path(forResource: "demo.gif", ofType: nil)
-        imgView.sy_startGifAnimation(imgpath: path)
+        imgView.sy_startGifAnimation(imgpath: path,autoRepeat: true)
+        
+//        imgView.sy_endGifAnimation()
     }
 
     override func didReceiveMemoryWarning() {

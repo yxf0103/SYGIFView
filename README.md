@@ -20,6 +20,25 @@ it, simply add the following line to your Podfile:
 pod 'SYGIFView'
 ```
 
+## Usage
+```
+import SYGIFView
+
+let imgView = UIImageView.init(frame: CGRect.init(x: 100, y: 100, width: 200, height: 160))
+view.addSubview(imgView)
+imgView.backgroundColor = UIColor.white
+let path = Bundle.main.path(forResource: "demo.gif", ofType: nil)
+
+// start animate
+imgView.sy_startGifAnimation(imgpath: path)
+//auto repeat
+imgView.sy_startGifAnimation(imgpath: path,autoRepeat: true)
+
+//end animate
+imgView.sy_endGifAnimation()
+```
+
+
 ## Author
 
 yxfeng0103@hotmail.com, ssi-yanxf@dfmc.com.cn

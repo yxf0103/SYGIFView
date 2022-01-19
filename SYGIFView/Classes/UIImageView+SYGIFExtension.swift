@@ -52,6 +52,12 @@ public extension UIImageView{
         self.sy_startGifAnimation(model: model)
     }
     
+    func sy_startGifAnimation(imgpath:String?,autoRepeat:Bool){
+        let model = SYGIFModel.init(localpath: imgpath)
+        model.autoRepeat = autoRepeat
+        self.sy_startGifAnimation(model: model)
+    }
+    
     func sy_startGifAnimation(model:SYGIFModel){
         self.sy_setGifModel(model: model)
         self.sy_setCurrentTime(time: 0)
