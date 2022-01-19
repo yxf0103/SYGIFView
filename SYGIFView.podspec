@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'SYGIFView'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of SYGIFView.'
+  s.summary          = 'gif extension for uiimageview'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  'gif extension for uiimageview'
                        DESC
 
-  s.homepage         = 'https://github.com/yxfeng0103@hotmail.com/SYGIFView'
+  s.homepage         = 'https://github.com/yxf0103/SYGIFView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'yxfeng0103@hotmail.com' => 'ssi-yanxf@dfmc.com.cn' }
-  s.source           = { :git => 'https://github.com/yxfeng0103@hotmail.com/SYGIFView.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/yxf0103/SYGIFView', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
