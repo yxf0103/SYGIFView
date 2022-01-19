@@ -1,0 +1,6 @@
+framework module Pods_SYGIFView_Tests {
+  umbrella header "Pods-SYGIFView_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

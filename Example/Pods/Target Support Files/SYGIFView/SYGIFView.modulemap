@@ -1,0 +1,6 @@
+framework module SYGIFView {
+  umbrella header "SYGIFView-umbrella.h"
+
+  export *
+  module * { export * }
+}

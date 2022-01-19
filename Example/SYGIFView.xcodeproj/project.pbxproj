@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E886F5D3A4F954FCA0B669B /* Pods_SYGIFView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB6CAD2720BE27E8536710D /* Pods_SYGIFView_Example.framework */; };
+		42483FF52797B3C3009F10A0 /* demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 42483FF42797B3C2009F10A0 /* demo.gif */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		2C86C5C725FB434494CEC7AD /* Pods_SYGIFView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SYGIFView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42483FF42797B3C2009F10A0 /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo.gif; sourceTree = "<group>"; };
 		44D27BA88987A0D9140FC786 /* Pods-SYGIFView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYGIFView_Example.debug.xcconfig"; path = "Target Support Files/Pods-SYGIFView_Example/Pods-SYGIFView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		5694F29705825749BDB89F72 /* Pods-SYGIFView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYGIFView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SYGIFView_Tests/Pods-SYGIFView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SYGIFView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYGIFView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,12 +43,12 @@
 		607FACE51AFB9204008FA782 /* SYGIFView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SYGIFView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6C33F084A1276EDFE88DA657 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6C33F084A1276EDFE88DA657 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		9EB6CAD2720BE27E8536710D /* Pods_SYGIFView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SYGIFView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A220BF391F972A640120DC01 /* SYGIFView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SYGIFView.podspec; path = ../SYGIFView.podspec; sourceTree = "<group>"; };
+		A220BF391F972A640120DC01 /* SYGIFView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SYGIFView.podspec; path = ../SYGIFView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B38124DE8F7BDC74FFD9C0EA /* Pods-SYGIFView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYGIFView_Tests.release.xcconfig"; path = "Target Support Files/Pods-SYGIFView_Tests/Pods-SYGIFView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DC4D38388E380DAA4F2DE50D /* Pods-SYGIFView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYGIFView_Example.release.xcconfig"; path = "Target Support Files/Pods-SYGIFView_Example/Pods-SYGIFView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		EDF3506E65E325628897FC5B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		EDF3506E65E325628897FC5B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				42483FF42797B3C2009F10A0 /* demo.gif */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
@@ -156,7 +159,6 @@
 				5694F29705825749BDB89F72 /* Pods-SYGIFView_Tests.debug.xcconfig */,
 				B38124DE8F7BDC74FFD9C0EA /* Pods-SYGIFView_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +229,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -247,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				42483FF52797B3C3009F10A0 /* demo.gif in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);

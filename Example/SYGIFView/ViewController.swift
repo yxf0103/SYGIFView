@@ -7,12 +7,20 @@
 //
 
 import UIKit
+import SYGIFView
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        view.backgroundColor = UIColor.red
+        
+        let imgView = UIImageView.init(frame: CGRect.init(x: 100, y: 100, width: 200, height: 160))
+        view.addSubview(imgView)
+        imgView.backgroundColor = UIColor.white
+        let path = Bundle.main.path(forResource: "demo.gif", ofType: nil)
+        imgView.sy_startGifAnimation(imgpath: path)
     }
 
     override func didReceiveMemoryWarning() {

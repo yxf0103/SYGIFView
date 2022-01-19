@@ -1,0 +1,16 @@
+PODS:
+  - SYGIFView (0.1.0)
+
+DEPENDENCIES:
+  - SYGIFView (from `../`)
+
+EXTERNAL SOURCES:
+  SYGIFView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SYGIFView: 0edfb049278199810f36fda53d32ba079f4a7d34
+
+PODFILE CHECKSUM: dcb7fa508ab7799e873e3ee68e9cbc8f35fa3e08
+
+COCOAPODS: 1.11.2
