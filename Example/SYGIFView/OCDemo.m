@@ -21,4 +21,8 @@
     return imgView;
 }
 
++(void)endImgview:(UIImageView *)view{
+    [view sy_endGifAnimation];
+}
+
 @end

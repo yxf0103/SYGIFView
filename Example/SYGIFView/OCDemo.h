@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 +(UIImageView *)showImgOnview:(UIView *)view;
 
++(void)endImgview:(UIImageView *)view;
+
 @end
 
 NS_ASSUME_NONNULL_END
