@@ -1,6 +1,6 @@
 {
   "name": "SYGIFView",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "summary": "gif extension for uiimageview",
   "description": "'gif extension for uiimageview'",
   "homepage": "https://github.com/yxf0103/SYGIFView",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/yxf0103/SYGIFView",
-    "tag": "0.1.1"
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "9.0"

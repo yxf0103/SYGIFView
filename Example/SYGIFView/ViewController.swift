@@ -30,6 +30,8 @@ class ViewController: UIViewController {
                                         "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F018d4d56e10ebc32f875520f5e890e.gif&refer=http%3A%2F%2Fimg.zcool.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1645175434&t=1c58627c81de607308af33727a2f60bc", autoRepeat: true)
         
 //        imgView.sy_endGifAnimation()
+        
+       let ocImgView = OCDemo.showImgOnview(self.view)
     }
 
     override func didReceiveMemoryWarning() {

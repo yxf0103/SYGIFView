@@ -2,11 +2,11 @@ PODS:
   - SDWebImage (5.12.2):
     - SDWebImage/Core (= 5.12.2)
   - SDWebImage/Core (5.12.2)
-  - SYGIFView (0.1.1):
-    - SYGIFView/Core (= 0.1.1)
-    - SYGIFView/SDWebImage (= 0.1.1)
-  - SYGIFView/Core (0.1.1)
-  - SYGIFView/SDWebImage (0.1.1):
+  - SYGIFView (0.2.0):
+    - SYGIFView/Core (= 0.2.0)
+    - SYGIFView/SDWebImage (= 0.2.0)
+  - SYGIFView/Core (0.2.0)
+  - SYGIFView/SDWebImage (0.2.0):
     - SDWebImage
     - SYGIFView/Core
 
@@ -23,7 +23,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   SDWebImage: 240e5c12b592fb1268c1d03b8c90d90e8c2ffe82
-  SYGIFView: ec791c0ebb20cede3e84cbfed67d8657fc5f7014
+  SYGIFView: 7a3ae9b6fef89ad3e79060eb9c898b70f11e4848
 
 PODFILE CHECKSUM: dcb7fa508ab7799e873e3ee68e9cbc8f35fa3e08
 

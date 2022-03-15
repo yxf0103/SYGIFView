@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E886F5D3A4F954FCA0B669B /* Pods_SYGIFView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB6CAD2720BE27E8536710D /* Pods_SYGIFView_Example.framework */; };
+		420B2F3127E0640B004A222F /* OCDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B2F3027E0640B004A222F /* OCDemo.m */; };
 		42483FF52797B3C3009F10A0 /* demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 42483FF42797B3C2009F10A0 /* demo.gif */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -30,6 +31,9 @@
 
 /* Begin PBXFileReference section */
 		2C86C5C725FB434494CEC7AD /* Pods_SYGIFView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SYGIFView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		420B2F2E27E0640B004A222F /* SYGIFView_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SYGIFView_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		420B2F2F27E0640B004A222F /* OCDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCDemo.h; sourceTree = "<group>"; };
+		420B2F3027E0640B004A222F /* OCDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCDemo.m; sourceTree = "<group>"; };
 		42483FF42797B3C2009F10A0 /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo.gif; sourceTree = "<group>"; };
 		44D27BA88987A0D9140FC786 /* Pods-SYGIFView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYGIFView_Example.debug.xcconfig"; path = "Target Support Files/Pods-SYGIFView_Example/Pods-SYGIFView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		5694F29705825749BDB89F72 /* Pods-SYGIFView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYGIFView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SYGIFView_Tests/Pods-SYGIFView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -107,10 +111,13 @@
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				42483FF42797B3C2009F10A0 /* demo.gif */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				420B2F2F27E0640B004A222F /* OCDemo.h */,
+				420B2F3027E0640B004A222F /* OCDemo.m */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				420B2F2E27E0640B004A222F /* SYGIFView_Example-Bridging-Header.h */,
 			);
 			name = "Example for SYGIFView";
 			path = SYGIFView;
@@ -215,7 +222,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1320;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -337,6 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				420B2F3127E0640B004A222F /* OCDemo.m in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
@@ -484,11 +492,15 @@
 			baseConfigurationReference = 44D27BA88987A0D9140FC786 /* Pods-SYGIFView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = SYGIFView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SYGIFView/SYGIFView_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -499,11 +511,14 @@
 			baseConfigurationReference = DC4D38388E380DAA4F2DE50D /* Pods-SYGIFView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = SYGIFView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SYGIFView/SYGIFView_Example-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};

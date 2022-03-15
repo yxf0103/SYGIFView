@@ -8,7 +8,7 @@
 import Foundation
 import SDWebImage
 
-public extension UIImageView{
+@objc public extension UIImageView{
     func sy_startGifAnimation(url:String?,autoRepeat:Bool=false) {
         guard let url = url else {
             return

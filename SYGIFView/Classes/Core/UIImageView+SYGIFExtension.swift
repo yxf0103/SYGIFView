@@ -11,12 +11,7 @@ let sy_gif_key = "sy_gifModel_key"
 let sy_gif_display_key = "sy_gif_display_key"
 let sy_gif_time_key = "sy_gif_time_key"
 
-public extension UIImageView{
-    
-    func sy_objcKey(key:String) -> UnsafePointer<Any>?{
-        guard let objcKey = UnsafePointer<Any>.init(bitPattern: key.hashValue) else { return nil }
-        return objcKey
-    }
+@objc public extension UIImageView{
     
     func sy_gifModel() -> SYGIFModel? {
         guard let key = sy_objcKey(key: sy_gif_key) else { return nil }
@@ -80,5 +75,13 @@ public extension UIImageView{
         self.sy_setCurrentTime(time: time)
         let model = self.sy_gifModel()
         self.image = model?.imgAtTime(time: time)
+    }
+}
+
+
+public extension UIImageView{    
+    func sy_objcKey(key:String) -> UnsafePointer<Any>?{
+        guard let objcKey = UnsafePointer<Any>.init(bitPattern: key.hashValue) else { return nil }
+        return objcKey
     }
 }
