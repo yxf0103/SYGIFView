@@ -21,6 +21,7 @@ pod 'SYGIFView'
 ```
 
 ## Usage
+swift
 ```
 import SYGIFView
 
@@ -37,6 +38,19 @@ webimgView.sy_startGifAnimation(url:url, autoRepeat: true)
 
 //end animate
 imgView.sy_endGifAnimation()
+```
+
+oc
+```
+//start animation
+
+NSString *path = [[NSBundle mainBundle] pathForResource:@"demo.gif" ofType:nil];
+UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(100, 500, 200, 160)];
+[imgView sy_startGifAnimationWithImgpath:path autoRepeat:YES];
+[view addSubview:imgView];
+    
+//end animation
+[imgView sy_endGifAnimation];    
 ```
 
 
