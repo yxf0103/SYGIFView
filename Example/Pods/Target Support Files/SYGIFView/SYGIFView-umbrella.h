@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "SYGifDisplayLinkProxy.h"
 
 FOUNDATION_EXPORT double SYGIFViewVersionNumber;
 FOUNDATION_EXPORT const unsigned char SYGIFViewVersionString[];

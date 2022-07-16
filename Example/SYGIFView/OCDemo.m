@@ -16,7 +16,7 @@
 +(UIImageView *)showImgOnview:(id)view{
     NSString *path = [[NSBundle mainBundle] pathForResource:@"demo.gif" ofType:nil];
     UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(100, 500, 200, 160)];
-    [imgView sy_startGifAnimationWithImgpath:path autoRepeat:YES];
+    [imgView sy_startGifAnimationWithImgpath:path autoRepeat:YES endShowFirstImg:true];
     [view addSubview:imgView];
     return imgView;
 }

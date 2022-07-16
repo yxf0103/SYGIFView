@@ -14,13 +14,12 @@ open class SYGifIndexItem {
     var indexImg : UIImage?
 }
 
-open class SYGIFModel: NSObject {
+open class SYGIFSourceModel: NSObject {
     private var imgLocalpath : String?
     private var imgData : Data?
     
-    private var totalTime: TimeInterval = 0
+    private(set) var totalTime: TimeInterval = 0
     private var gifTimeIndexs = [SYGifIndexItem]()
-    var autoRepeat = false
     
     private var currentIndex: SYGifIndexItem?
     
@@ -77,7 +76,7 @@ open class SYGIFModel: NSObject {
     }
 }
 
-public extension SYGIFModel{
+public extension SYGIFSourceModel{
     
     func gifImageData() -> NSData?{
         if imgData != nil {
@@ -99,22 +98,19 @@ public extension SYGIFModel{
             return self.defaultImg
         }
         
-        if time > totalTime,autoRepeat == false {
+        if time > totalTime{
             return currentIndex?.indexImg
         }
-        
-        //修正时间
-        var alterTime = time
-        while alterTime > totalTime {
-            alterTime -= totalTime
-        }
 
-        if currentIndex != nil, currentIndex!.indexImg != nil,alterTime >= currentIndex!.minDuration, alterTime < currentIndex!.maxDuration{
+        if currentIndex != nil,
+           currentIndex!.indexImg != nil,
+           time >= currentIndex!.minDuration,
+           time < currentIndex!.maxDuration{
             return currentIndex?.indexImg
         }
         currentIndex?.indexImg = nil
         for indexTime in gifTimeIndexs {
-            if alterTime >= indexTime.minDuration && alterTime < indexTime.maxDuration {
+            if time >= indexTime.minDuration && time < indexTime.maxDuration {
                 guard let subImgRef = CGImageSourceCreateImageAtIndex(imgSource, indexTime.index, nil) else{
                     continue
                 }
